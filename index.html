@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>言語–権力–空間、および人間生命の軌跡に関する方法論</title>
+<meta name="description" content="中央政治権力からの距離が口語の音韻・文法に沈殿する二大極を出発点に、「官様文体／地方化口語」×「権力結合度」の四象限から社会的生態位と運命の軌跡を診断する方法論。">
+<link rel="canonical" href="https://syu-toutousai.github.io/language-power-space/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="言語–権力–空間、および人間生命の軌跡に関する方法論">
+<meta property="og:description" content="方言の変異を、権力への結合度から読み解く四象限モデル。">
+<meta property="og:url" content="https://syu-toutousai.github.io/language-power-space/">
+<style>
+:root{
+  --paper:#f4efe6;
+  --paper-deep:#ebe3d6;
+  --card:#fbf8f2;
+  --ink:#211d19;
+  --muted:#6f665a;
+  --line:#d8cdbb;
+  --indigo:#29345c;
+  --indigo-soft:#e6e8f1;
+  --vermilion:#a43b2c;
+  --moss:#405e4e;
+  --moss-soft:#e7ede7;
+  --ochre:#9a6f34;
+  --ochre-soft:#f3e9d7;
+  --stone:#7c7265;
+  --stone-soft:#ece7df;
+  --serif:"Noto Serif CJK JP","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho","YuMincho","Songti SC",serif;
+  --sans:"Noto Sans CJK JP","Noto Sans JP","Hiragino Sans","Yu Gothic","YuGothic",system-ui,sans-serif;
+  --shadow:0 18px 50px rgba(48,38,24,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(164,59,44,.055),transparent 28rem),
+    radial-gradient(circle at 88% 32%,rgba(41,52,92,.055),transparent 32rem),
+    var(--paper);
+  color:var(--ink);
+  font-family:var(--serif);
+  font-feature-settings:"palt" 1;
+  line-height:1.95;
+  text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:.06em}
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:99;background:var(--ink);color:var(--paper);
+  padding:.7em 1.1em;font-family:var(--sans);font-size:.82rem
+}
+.skip:focus{left:1rem;top:1rem}
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.055),transparent 45%),
+    linear-gradient(150deg,#202946 0%,#29345c 52%,#352f4a 100%);
+  color:#f7f1e5;
+  border-bottom:5px solid var(--vermilion);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.7),transparent 90%);
+}
+.hero::after{
+  content:"言";position:absolute;right:-.05em;bottom:-.38em;
+  font-size:clamp(16rem,34vw,30rem);line-height:1;
+  color:rgba(247,241,229,.035);pointer-events:none;user-select:none;
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:1020px;margin:0 auto;
+  padding:clamp(3.5rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem) clamp(3rem,6vw,5rem);
+}
+.eyebrow{
+  margin:0 0 1.6rem;font-family:var(--sans);font-size:.72rem;font-weight:700;
+  letter-spacing:.24em;text-transform:uppercase;color:#c9bda8
+}
+.eyebrow span{margin:0 .7em;color:var(--vermilion);opacity:.9}
+h1{
+  margin:0;max-width:24em;
+  font-size:clamp(1.95rem,4.4vw,3.2rem);
+  line-height:1.36;font-weight:600;letter-spacing:.015em;
+  text-wrap:balance;
+}
+.subtitle{
+  margin:1.5rem 0 0;font-family:var(--sans);font-size:clamp(.9rem,2vw,1.08rem);
+  font-weight:500;letter-spacing:.08em;color:#d8cdbb
+}
+.lede{
+  margin:1.9rem 0 0;max-width:48em;font-size:clamp(.95rem,2vw,1.03rem);
+  line-height:2.05;color:#e5dccb
+}
+.meta-chips{
+  display:flex;flex-wrap:wrap;gap:.55rem;margin:2.2rem 0 0;padding:0;list-style:none
+}
+.meta-chips li{
+  border:1px solid rgba(247,241,229,.28);border-radius:999px;
+  padding:.28em .95em;font-family:var(--sans);font-size:.7rem;
+  letter-spacing:.12em;color:#ded3c0
+}
+main{max-width:1020px;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) clamp(1.25rem,4vw,2.5rem) 0}
+.essay{max-width:800px;margin:0 auto}
+.section{padding:clamp(2.2rem,5vw,3.6rem) 0;border-top:1px solid var(--line)}
+.section:first-of-type{border-top:0;padding-top:0}
+.section-head{display:flex;align-items:flex-start;gap:clamp(.9rem,2.5vw,1.5rem);margin-bottom:1.7rem}
+.section-no{
+  flex:0 0 auto;font-size:clamp(2.7rem,7vw,4.6rem);line-height:.9;
+  color:var(--vermilion);font-weight:500;letter-spacing:-.04em
+}
+.kicker{
+  margin:0 0 .3rem;font-family:var(--sans);font-size:.68rem;font-weight:700;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--muted)
+}
+h2{
+  margin:0;font-size:clamp(1.45rem,3.4vw,2.05rem);line-height:1.5;
+  font-weight:600;letter-spacing:.01em;text-wrap:balance
+}
+.section > p{margin:0 0 1.5rem;font-size:clamp(.96rem,2vw,1.03rem)}
+.poles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.15rem;margin-top:2rem}
+.pole{
+  background:var(--card);border:1px solid var(--line);border-radius:4px;
+  padding:clamp(1.3rem,3vw,1.8rem);box-shadow:var(--shadow)
+}
+.pole::before{content:"";display:block;width:2.6rem;height:3px;margin-bottom:1.05rem;background:var(--accent)}
+.pole-coast{--accent:var(--vermilion)}
+.pole-frontier{--accent:var(--moss)}
+.pole-tag{
+  margin:0 0 .55rem;font-family:var(--sans);font-size:.64rem;font-weight:700;
+  letter-spacing:.22em;color:var(--accent);text-transform:uppercase
+}
+.pole h3{margin:0;font-size:clamp(1.18rem,2.6vw,1.42rem);line-height:1.5;font-weight:600}
+.pole-sub{margin:.25rem 0 1.25rem;font-family:var(--sans);font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+.pole dl{margin:0}
+.pole dl > div{border-top:1px dotted var(--line);padding-top:.95rem;margin-top:.95rem}
+.pole dt,.type-list dt{
+  margin:0 0 .38rem;font-family:var(--sans);font-size:.68rem;font-weight:700;
+  letter-spacing:.14em;color:var(--accent,var(--muted))
+}
+.pole dd,.type-list dd{margin:0;font-size:.92rem;line-height:1.9}
+.matrix-figure{margin:2rem 0 0}
+.matrix-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--card);box-shadow:var(--shadow)}
+table.matrix{width:100%;min-width:560px;border-collapse:collapse;font-family:var(--sans)}
+table.matrix caption{
+  caption-side:top;text-align:left;padding:1rem 1.15rem;font-family:var(--sans);
+  font-size:.68rem;font-weight:700;letter-spacing:.2em;color:var(--muted)
+}
+table.matrix th,table.matrix td{border:1px solid var(--line);padding:.95rem 1rem;vertical-align:top}
+table.matrix thead th{
+  background:var(--paper-deep);font-size:.72rem;line-height:1.7;font-weight:700;letter-spacing:.04em
+}
+table.matrix thead th small{display:block;margin-top:.18rem;font-weight:500;font-size:.63rem;letter-spacing:.06em;color:var(--muted)}
+table.matrix .corner{width:5.6rem;background:var(--paper-deep);color:var(--muted);font-size:.61rem;letter-spacing:.1em}
+table.matrix tbody th{
+  width:5.6rem;background:var(--paper-deep);text-align:left;font-size:1rem;line-height:1.4
+}
+table.matrix tbody th small{display:block;margin-top:.25rem;font-size:.6rem;font-weight:500;letter-spacing:.08em;color:var(--muted)}
+table.matrix td{width:calc((100% - 5.6rem)/2)}
+.q{position:relative;min-height:7.2rem}
+.q strong{display:block;font-size:.88rem;line-height:1.65;font-weight:700;letter-spacing:.02em}
+.q small{display:block;margin-top:.5rem;font-size:.62rem;letter-spacing:.05em;color:var(--muted)}
+.q-no{
+  display:block;margin-bottom:.55rem;font-family:var(--serif);
+  font-size:1.15rem;line-height:1;color:var(--muted);opacity:.7
+}
+.q-power{background:var(--indigo-soft);box-shadow:inset 0 3px 0 var(--indigo)}
+.q-base{background:var(--moss-soft);box-shadow:inset 0 3px 0 var(--moss)}
+.q-intel{background:var(--ochre-soft);box-shadow:inset 0 3px 0 var(--ochre)}
+.q-bottom{background:var(--stone-soft);box-shadow:inset 0 3px 0 var(--stone)}
+figcaption{
+  margin-top:.9rem;font-family:var(--sans);font-size:.7rem;line-height:1.9;
+  letter-spacing:.03em;color:var(--muted)
+}
+.types{display:grid;gap:1.15rem;margin-top:2.2rem}
+.type{
+  background:var(--card);border:1px solid var(--line);border-radius:4px;
+  padding:clamp(1.3rem,3vw,1.9rem);box-shadow:var(--shadow);
+  border-left:4px solid var(--accent)
+}
+.t-intel{--accent:var(--ochre)}
+.t-power{--accent:var(--indigo)}
+.t-base{--accent:var(--moss)}
+.t-bottom{--accent:var(--stone)}
+.type-head{display:flex;align-items:flex-start;gap:1rem}
+.type-no{
+  flex:0 0 auto;font-size:1.7rem;line-height:1;color:var(--accent);
+  font-weight:500;letter-spacing:-.03em;padding-top:.1rem
+}
+.type-formula{
+  margin:0 0 .2rem;font-family:var(--sans);font-size:.67rem;font-weight:700;
+  letter-spacing:.08em;color:var(--accent)
+}
+.type h3{margin:0;font-size:clamp(1.18rem,2.6vw,1.42rem);line-height:1.55;font-weight:600}
+.type-list{margin:1.25rem 0 0;padding:0}
+.type-list > div{
+  display:grid;grid-template-columns:7.8rem minmax(0,1fr);gap:1rem;
+  padding:.85rem 0;border-top:1px dotted var(--line)
+}
+.type-list dt{margin:0;padding-top:.18rem}
+.type-list dd p{margin:0 0 .7rem}
+.type-list dd p:last-child{margin-bottom:0}
+.diagnostics{margin:1.8rem 0 0;padding:0;list-style:none;counter-reset:diag}
+.diagnostics li{
+  position:relative;padding:1.4rem 0 1.4rem 3.4rem;border-top:1px solid var(--line)
+}
+.diagnostics li:last-child{border-bottom:1px solid var(--line)}
+.diagnostics li::before{
+  counter-increment:diag;content:counter(diag,decimal-leading-zero);
+  position:absolute;left:0;top:1.45rem;font-family:var(--serif);
+  font-size:1.05rem;color:var(--vermilion);letter-spacing:.02em
+}
+.diagnostics h3{margin:0 0 .5rem;font-size:1.12rem;font-weight:600;line-height:1.6}
+.diagnostics p{margin:0;font-size:.95rem}
+.coda{
+  margin:2.2rem 0 0;padding:1.5rem 1.6rem;border-left:3px solid var(--vermilion);
+  background:linear-gradient(90deg,rgba(164,59,44,.055),transparent);
+  font-size:clamp(.97rem,2vw,1.04rem);line-height:2.05
+}
+.site-footer{
+  margin-top:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--line);
+  background:var(--paper-deep);text-align:center;
+  padding:2.4rem clamp(1.25rem,4vw,2.5rem) 2.8rem;font-family:var(--sans)
+}
+.footer-mark{margin:0 0 .45rem;font-family:var(--serif);font-size:1.05rem;letter-spacing:.12em}
+.site-footer p{margin:.25rem 0;font-size:.74rem;color:var(--muted);letter-spacing:.04em}
+.site-footer a{color:var(--ink);text-decoration-color:var(--line)}
+@media (max-width:720px){
+  .poles{grid-template-columns:1fr}
+  .type-list > div{grid-template-columns:1fr;gap:.25rem}
+  .type-list dt{padding-top:0}
+  .section-head{gap:.85rem}
+  .diagnostics li{padding-left:2.6rem}
+}
+@media (max-width:460px){
+  body{line-height:1.88}
+  .eyebrow{font-size:.62rem;letter-spacing:.13em}
+  .eyebrow span{margin:0 .35em}
+  .lede{line-height:1.95}
+  table.matrix{min-width:520px}
+  .hero::after{font-size:13rem}
+}
+@media print{
+  body{background:#fff}
+  .hero{background:#fff;color:#000;border-bottom:1px solid #000}
+  .hero::before,.hero::after,.skip{display:none}
+  .hero-inner{padding:1.5rem 0}
+  .eyebrow,.subtitle,.lede,.meta-chips{color:#333}
+  .meta-chips li{border-color:#999}
+  main{padding-top:1.5rem}
+  .pole,.type,table.matrix,.coda{box-shadow:none}
+  .site-footer{background:#fff}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Methodology Note <span>／</span> 社会言語学・権力生態学</p>
+    <h1>言語–権力–空間、<br>および人間生命の軌跡に<wbr>関する方法論</h1>
+    <p class="subtitle">方言の変異を、権力への結合度から読み解く四象限モデル</p>
+    <p class="lede">中央からの距離は、音韻の壁となって現れ、あるいは文法の基層を置き換える。口語の変異を権力配置の刻印として読み、四つの社会的生態位と運命の軌跡を診断する。</p>
+    <ul class="meta-chips">
+      <li>社会言語学</li>
+      <li>方言地理</li>
+      <li>権力生態学</li>
+      <li>四象限診断</li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<article class="essay">
+
+  <section class="section" id="intro">
+    <header class="section-head">
+      <span class="section-no" aria-hidden="true">一</span>
+      <div>
+        <p class="kicker">序論</p>
+        <h2>権力からの距離と言語変異の二大極</h2>
+      </div>
+    </header>
+    <p>言語は単なる思想の伝達手段にとどまらず、個人の社会化過程において「権力にどれほど浸食・内包されているか」を示す生理的な刻印である。中央の政治権力（京師・官話中心域）からの距離が開くにつれ、民間の口語は二つの異なる軸上で変異および古態の沈殿を起こす。</p>
+
+    <div class="poles">
+      <section class="pole pole-coast">
+        <p class="pole-tag">第一極</p>
+        <h3>東南沿海方言圏</h3>
+        <p class="pole-sub">閩・粤・客・呉など</p>
+        <dl>
+          <div>
+            <dt>変異メカニズム</dt>
+            <dd>語彙および音韻層における「古風の保持」（入声、文白異読など）。</dd>
+          </div>
+          <div>
+            <dt>政治的シグナル</dt>
+            <dd>音韻の障壁による「地方的文化共同体」の形成であり、中央からの行政命令を言語の音韻レベルで解構・相対化する。</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="pole pole-frontier">
+        <p class="pole-tag">第二極</p>
+        <h3>北方・西北辺境・少数民族接触圏</h3>
+        <p class="pole-sub">青甘・内モンゴル・東北など</p>
+        <dl>
+          <div>
+            <dt>変異メカニズム</dt>
+            <dd>文法構造層における「アルタイ語的基層置換」（SOV語順、後置格標識、膠着語的接尾辞の定着）。</dd>
+          </div>
+          <div>
+            <dt>政治的シグナル</dt>
+            <dd>国家の統治命令が底層の日常口語へと翻案される過程で文法構造レベルの「再コード化」を受け、強い生存戦略的色彩を帯びた実用口語と化す。</dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </section>
+
+  <section class="section" id="matrix">
+    <header class="section-head">
+      <span class="section-no" aria-hidden="true">二</span>
+      <div>
+        <p class="kicker">権力–言語のマトリクス</p>
+        <h2>社会的生態位（生態的地位）</h2>
+      </div>
+    </header>
+    <p>「口語・文体における政治性の度合い（官様文体 vs 地方化／底層化）」と「現実の政治権力との実質的結合度（体制の中枢 vs 権力からの疎外）」を交差させることで、個人の社会的生態位と運命の軌跡を診断する視座が確立される。</p>
+
+    <figure class="matrix-figure">
+      <div class="matrix-wrap">
+        <table class="matrix">
+          <caption>四つの社会的生態位</caption>
+          <thead>
+            <tr>
+              <th class="corner" scope="col">結合度 ／ 文体</th>
+              <th scope="col">官様文体<small>経学的・書面語的</small></th>
+              <th scope="col">地方化・アルタイ化口語<small>土着的・膠着語的</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">高<small>体制中枢</small></th>
+              <td class="q q-power"><span class="q-no">02</span><strong>体制中枢・権力体現者</strong><small>官様文体 × 高結合</small></td>
+              <td class="q q-base"><span class="q-no">03</span><strong>基層統治・地方実力者</strong><small>地方化文体 × 高結合</small></td>
+            </tr>
+            <tr>
+              <th scope="row">低<small>権力疎外</small></th>
+              <td class="q q-intel"><span class="q-no">01</span><strong>科教文衛・縁辺エリート</strong><small>官様文体 × 低結合</small></td>
+              <td class="q q-bottom"><span class="q-no">04</span><strong>前近代・底層社会</strong><small>地方化文体 × 低結合</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <figcaption>横軸：言語の政治性の度合い（官様文体 ⇄ 地方化／底層化）　縦軸：現実の政治権力との実質的結合度</figcaption>
+    </figure>
+
+    <div class="types">
+      <article class="type t-intel" id="type-1">
+        <header class="type-head">
+          <span class="type-no">01</span>
+          <div>
+            <p class="type-formula">官様テキスト的語彙 ＋ 権力からの疎外</p>
+            <h3>科教文衛・縁辺体制内</h3>
+          </div>
+        </header>
+        <dl class="type-list">
+          <div>
+            <dt>言語的特徴</dt>
+            <dd>書面語、公文書的語彙、厳密な論理節を口語で多用するが、政治現場特有の柔軟な無謬的レトリックには欠ける。</dd>
+          </div>
+          <div>
+            <dt>社会的生態位</dt>
+            <dd>大学教員、研究者、技術官僚、知識人、体制外アドバイザー。</dd>
+          </div>
+          <div>
+            <dt>運命の軌跡</dt>
+            <dd>
+              <p>体制の言語コード（記号資本）を習得していながら、実権の行使回路を欠く。</p>
+              <p>「言語の高度政治化・エリート化」と「現実の権力からの排斥」の非対称性により、精神的隔離感と疎外感を抱きやすい。政治的変動期において最も脆弱な被動者となりやすい。</p>
+            </dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="type t-power" id="type-2">
+        <header class="type-head">
+          <span class="type-no">02</span>
+          <div>
+            <p class="type-formula">官様テキスト的語彙 ＋ 権力との高度結合</p>
+            <h3>体制中枢・意思決定層</h3>
+          </div>
+        </header>
+        <dl class="type-list">
+          <div>
+            <dt>言語的特徴</dt>
+            <dd>官様テキストを完璧に使いこなし、隠喩・回避・合規性の強調に長け、口語そのものが即座に公文書として機能する。</dd>
+          </div>
+          <div>
+            <dt>社会的生態位</dt>
+            <dd>党政高官、体制内の核心的ブレーン。</dd>
+          </div>
+          <div>
+            <dt>運命の軌跡</dt>
+            <dd>
+              <p>運命が政治周期・政策転換と完全に同期する。「言葉によって興り、言葉によって滅ぶ」。政治的再編に直面した際、自らの生存資本であった「経学的言語」が直ちに切断不能な政治的烙印へと変貌する。</p>
+            </dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="type t-base" id="type-3">
+        <header class="type-head">
+          <span class="type-no">03</span>
+          <div>
+            <p class="type-formula">地方化・アルタイ化口語 ＋ 権力との高度結合</p>
+            <h3>基層統治・地方実力者</h3>
+          </div>
+        </header>
+        <dl class="type-list">
+          <div>
+            <dt>言語的特徴</dt>
+            <dd>上司向けの官様レトリックと、底層向けの土着・アルタイ化方言を自在に切り替える（二重言語現象 / Diglossia）。</dd>
+          </div>
+          <div>
+            <dt>社会的生態位</dt>
+            <dd>末端の地方幹部、辺境の現場官僚、地方実業家。</dd>
+          </div>
+          <div>
+            <dt>運命の軌跡</dt>
+            <dd>
+              <p>極めて強い生存靭性を持つ。国家権力と地域社会の間をつなぐ「通訳官」であり、基層統治の結節点として高い不可欠性を誇るが、中央と地方の利害対立時にはスケープゴートとされやすい。</p>
+            </dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="type t-bottom" id="type-4">
+        <header class="type-head">
+          <span class="type-no">04</span>
+          <div>
+            <p class="type-formula">地方化・アルタイ化口語 ＋ 権力からの疎外</p>
+            <h3>前近代・底層社会</h3>
+          </div>
+        </header>
+        <dl class="type-list">
+          <div>
+            <dt>言語的特徴</dt>
+            <dd>完全に地方化・膠着語化・強口語化された言語を用い、「経学的官様語」に対して無感覚または理解不能。</dd>
+          </div>
+          <div>
+            <dt>社会的生態位</dt>
+            <dd>辺境の農牧民、都市底層労働者、伝統的地域コミュニティ。</dd>
+          </div>
+          <div>
+            <dt>運命の軌跡</dt>
+            <dd>
+              <p>権力の末端に位置する統治対象。自らの運命はマクロな近代化や国家統合の波に一律に左右され、主体的・政治的な発話権をほとんど持たない。</p>
+            </dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="diagnostics">
+    <header class="section-head">
+      <span class="section-no" aria-hidden="true">三</span>
+      <div>
+        <p class="kicker">応用</p>
+        <h2>診断的方法論としての応用価値</h2>
+      </div>
+    </header>
+    <p>本方法論は、個人の言語表現を分析することで、その人物の「出生基盤」「社会的安全境界」「思考の慣性」「時代変動に対するリスク耐性」を迅速に識別・予測する社会学的臨床ツールとして機能する。</p>
+
+    <ol class="diagnostics">
+      <li>
+        <h3>「擬似順応」の判別</h3>
+        <p>体制中枢への順応を装う人物であっても、その発話の端々にアルタイ化漢語の接尾辞や地方方言の基層語彙が露出する場合、その権力構造への組み込みは表層的であり、実態は末端または縁辺的存在にとどまることが見抜ける。</p>
+      </li>
+      <li>
+        <h3>「現実解離」の予測</h3>
+        <p>科教文衛層（官様文体＋低結合）の人間が、自らの書面化・経学化された言語のまま基層社会や市場経済に介入しようとする場合、底層社会の「脱官様化された言語インターフェース」との摩擦により、必然的に構造的挫折を経験する。</p>
+      </li>
+    </ol>
+
+    <p class="coda">言語の音韻・文法構造と権力配置の交差点に着目することで、歴史的な方言形成の謎を解き明かすのみならず、現代社会における人間の動態と宿命を分析することが可能となる。</p>
+  </section>
+
+</article>
+</main>
+
+<footer class="site-footer">
+  <p class="footer-mark">言語–権力–空間</p>
+  <p><a href="https://syu-toutousai.github.io/">学習アーカイブ ・ 資料站</a> に戻る</p>
+  <p>syu-toutousai · 2026 · <a href="https://github.com/syu-toutousai/language-power-space">Source</a></p>
+</footer>
+</body>
+</html>
